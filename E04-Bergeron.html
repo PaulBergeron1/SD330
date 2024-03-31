@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Refrigerator Display</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: tan;
+            color: black;
+            margin: 0;
+            display: flex;
+			flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #fridge-background {
+            background-color: #808080;
+            width: 450px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+		#vert {
+		}
+		#clock {
+            position: absolute;
+            top: 10px;
+        }
+        #fridgeImage {
+            max-width: 75%;
+            max-height: 75%;
+        }
+        #tvImage {
+            max-height: 75%;
+            max-width: 75%;
+        }
+		#browserImage {
+			max-width: 25%;
+            max-height: 100%;
+		}
+        #button1 {
+            position: absolute;
+            bottom: 10px;
+            background-color: Green;
+            color: white;
+			}
+		#thermoImage {
+			max-width: 50%;
+            max-height: 50%;
+
+        }
+		
+    </style>
+</head>
+<body>
+    <div id="fridge-background">
+        <div id="clock"></div>
+		<img id="browserImage" src="https://aptokash.github.io/SD330-2/06-web.jpg">
+        <img id="fridgeImage" src="https://aptokash.github.io/SD330-2/06-fridge.jpg">
+		<div id="vert">
+			<img id="tvImage" src="https://aptokash.github.io/SD330-2/06-tv.jpg">
+			<img id="thermoImage" src="https://www.freeiconspng.com/thumbs/thermostat-icon/thermostat-icon-21.png">
+		</div>
+        <input type="button" onclick="toggleImage()" id="button1" value="On">
+    </div>
+    <script>
+        function toggleImage() {
+            var but1 = document.getElementById("button1");
+            var fridgeImage = document.getElementById("fridgeImage");
+			var browserImage = document.getElementById("browserImage");
+            var clock = document.getElementById("clock");
+            var tvImage = document.getElementById("tvImage");
+            if (but1.value === "On") {
+                but1.value = "Off";
+                but1.style.backgroundColor = "Red";
+                fridgeImage.style.display = "none";
+                tvImage.style.display = "none";
+				browserImage.style.display = "none";
+				thermoImage.style.display = "none";
+
+            } else {
+                but1.value = "On";
+                but1.style.backgroundColor = "Green";
+                fridgeImage.style.display = "block";
+                tvImage.style.display = "block";
+                browserImage.style.display = "block";
+                thermoImage.style.display = "block";
+            }
+        }
+
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById("clock").textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000); // Update clock every second
+    </script>
+</body>
+<footer>
+(c) Paul Bergeron, 3/5/2024
+</footer>
+</html>

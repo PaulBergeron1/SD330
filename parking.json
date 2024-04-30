@@ -1,0 +1,141 @@
+{
+    "parking_lots": [
+        {
+            "name": "Foy",
+            "mapFilename": "mapFoy.jpg",
+            "totalSpaces": 13,
+            "comments": "the forgotten lot, by riverside behind McCormick",
+			"allowsBusses": true,
+			"hasHandicap": true,
+            "spaces": [
+                {
+                    "spaceId": 1,
+                    "type": "faculty/staff",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 2,
+                    "type": "student",
+                    "status": "filled",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 3,
+                    "type": "faculty/staff",
+                    "status": "available",
+                    "isHandicap": true,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 4,
+                    "type": "faculty/staff",
+                    "status": "filled",
+                    "isHandicap": true,
+                    "reserved_date": "4/29/2024"
+                },
+				{
+                    "spaceId": 5,
+                    "type": "student",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 6,
+                    "type": "faculty/staff",
+                    "status": "filled",
+                    "isHandicap": true,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 7,
+                    "type": "student",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 8,
+                    "type": "faculty/staff",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 9,
+                    "type": "student",
+                    "status": "filled",
+                    "isHandicap": true,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 10,
+                    "type": "faculty/staff",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": "4/30/2024"
+                },
+				{
+                    "spaceId": 11,
+                    "type": "student",
+                    "status": "available",
+                    "isHandicap": false,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 12,
+                    "type": "faculty/staff",
+                    "status": "filled",
+                    "isHandicap": true,
+                    "reserved_date": ""
+                },
+				{
+                    "spaceId": 13,
+                    "type": "student",
+                    "status": "filled",
+                    "isHandicap": false,
+                    "reserved_date": "4/31/2024"
+                }
+			]
+		},
+		{
+            "name": "Kieran",
+            "mapFilename": "mapKieran.jpg",
+            "totalSpaces": 5,
+            "comments": "gatehouse lot, most strictly patrolled lot on campus, smallest lot on campus",
+			"allowsBusses": false,
+			"hasHandicap": false,
+			"spaces": []
+		},
+		{
+			"name": "upperFulton",
+            "mapFilename": "mapUpperFulton.jpg",
+            "totalSpaces": 20,
+            "comments": "residential, largest lot on campus, virtually ignored by security",
+			"allowsBusses": true,
+			"hasHandicap": true,
+			"spaces": []
+		},
+		{
+            "name": "Donnelly",
+            "mapFilename": "mapDonnelly.jpg",
+            "totalSpaces": 15,
+            "comments": "previously fashing buildig lot, heavily patrolled for tickets",
+			"allowsBusses": false,
+			"hasHandicap": true,
+			"spaces": []
+		},
+		{
+            "name": "lowerNew",
+            "mapFilename": "mapLowerNew.jpg",
+            "totalSpaces": 12,
+            "comments": "lot commonly used by CS studnets for its close proximity to handcock, located on path to river",
+			"allowsBusses": false,
+			"hasHandicap": false,
+			"spaces": []
+		}
+	]
+}
